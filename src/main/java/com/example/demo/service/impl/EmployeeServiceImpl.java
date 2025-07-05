@@ -48,7 +48,7 @@ public class EmployeeServiceImpl implements EmployeeService{
 		// 3. 安排座位
 		try {
 			employeeRepository.updateEmpSeating(empId, seatSeq);
-		} catch (EmployeeException e) {
+		} catch (Exception e) {
 			throw new EmployeeException("安排座位失敗："+ e.getMessage(), e);
 		}
 		
@@ -59,7 +59,7 @@ public class EmployeeServiceImpl implements EmployeeService{
 		
 		try {
 			employeeRepository.deleteEmpSeating(empId);
-		} catch (EmployeeException e) {
+		} catch (Exception e) {
 			throw new EmployeeException("清除座位失敗：" + e.getMessage(), e);
 		}
 		

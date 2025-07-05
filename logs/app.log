@@ -115,3 +115,45 @@ This generated password is for development use only. Your security configuration
 2025-07-05T15:18:53.813+08:00  INFO 10136 --- [Project-ESun] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
 2025-07-05T15:18:53.913+08:00  INFO 10136 --- [Project-ESun] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
 2025-07-05T15:18:53.920+08:00  INFO 10136 --- [Project-ESun] [main] c.example.demo.ProjectESunApplication    : Started ProjectESunApplication in 2.984 seconds (process running for 3.35)
+2025-07-05T18:49:58.523+08:00  INFO 10136 --- [Project-ESun] [RMI TCP Connection(219)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-07-05T18:49:58.680+08:00  INFO 10136 --- [Project-ESun] [RMI TCP Connection(219)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-05T18:49:58.783+08:00  INFO 10136 --- [Project-ESun] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-05T18:49:58.835+08:00  INFO 10136 --- [Project-ESun] [RMI TCP Connection(219)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-05T18:49:58.871+08:00  INFO 10136 --- [Project-ESun] [RMI TCP Connection(219)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-05T18:49:58.878+08:00  INFO 10136 --- [Project-ESun] [RMI TCP Connection(219)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-05T18:50:00.215+08:00  INFO 19928 --- [Project-ESun] [main] c.example.demo.ProjectESunApplication    : Starting ProjectESunApplication using Java 17.0.8 with PID 19928 (C:\Users\enjoy\Desktop\翁\新尖兵計畫\JavaWeb\worksplace\Project-ESun\target\classes started by enjoy in C:\Users\enjoy\Desktop\翁\新尖兵計畫\JavaWeb\worksplace\Project-ESun)
+2025-07-05T18:50:00.217+08:00  INFO 19928 --- [Project-ESun] [main] c.example.demo.ProjectESunApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-07-05T18:50:00.646+08:00  INFO 19928 --- [Project-ESun] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-05T18:50:00.691+08:00  INFO 19928 --- [Project-ESun] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 2 JPA repository interfaces.
+2025-07-05T18:50:01.090+08:00  INFO 19928 --- [Project-ESun] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-05T18:50:01.099+08:00  INFO 19928 --- [Project-ESun] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-05T18:50:01.099+08:00  INFO 19928 --- [Project-ESun] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-05T18:50:01.132+08:00  INFO 19928 --- [Project-ESun] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-05T18:50:01.132+08:00  INFO 19928 --- [Project-ESun] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 885 ms
+2025-07-05T18:50:01.235+08:00  INFO 19928 --- [Project-ESun] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-05T18:50:01.261+08:00  INFO 19928 --- [Project-ESun] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-07-05T18:50:01.282+08:00  INFO 19928 --- [Project-ESun] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-05T18:50:01.567+08:00  INFO 19928 --- [Project-ESun] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-05T18:50:01.607+08:00  INFO 19928 --- [Project-ESun] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-05T18:50:01.823+08:00  INFO 19928 --- [Project-ESun] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@87aec6a
+2025-07-05T18:50:01.825+08:00  INFO 19928 --- [Project-ESun] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-05T18:50:01.915+08:00  INFO 19928 --- [Project-ESun] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.34
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-05T18:50:02.583+08:00  INFO 19928 --- [Project-ESun] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-05T18:50:02.616+08:00  INFO 19928 --- [Project-ESun] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-05T18:50:02.786+08:00  INFO 19928 --- [Project-ESun] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-07-05T18:50:03.184+08:00  WARN 19928 --- [Project-ESun] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: e3245f24-cfc4-443e-a5ea-2e560cda5003
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-07-05T18:50:03.191+08:00  INFO 19928 --- [Project-ESun] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-07-05T18:50:03.321+08:00  INFO 19928 --- [Project-ESun] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-07-05T18:50:03.332+08:00  INFO 19928 --- [Project-ESun] [main] c.example.demo.ProjectESunApplication    : Started ProjectESunApplication in 3.4 seconds (process running for 3.729)
