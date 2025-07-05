@@ -21,7 +21,7 @@ public class Employee {
 	@Id // PK
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "EMP_ID", nullable = false)
-	private int empId;
+	private Integer empId;
 	
 	// 員工姓名
 	@Column(name = "NAME", nullable = false)
