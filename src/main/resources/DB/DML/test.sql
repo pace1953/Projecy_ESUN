@@ -5,6 +5,8 @@ insert into employee (emp_id, email, name) values ('10000', 'pace1953@gmail.com'
 insert into seating_chart (floor_no, seat_no) values (1, 1);
 insert into employee (emp_id, email, name) values ('10001', 'box1019@gmail.com', 'Box');
 insert into seating_chart (floor_no, seat_no) values (1, 2);
+insert into employee (emp_id, email, name) values ('10002', 'sheng0905@gmail.com', 'sheng');
+insert into employee (emp_id, email, name) values ('10003', 'weng1124@gmail.com', 'weng');
 
 -- 查看目前的資料跟狀況
 CALL getAllEmp();-
