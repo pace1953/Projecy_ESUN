@@ -3,6 +3,8 @@
 
 DDL 和 DML 位址：src\main\resources\DB
 
+前端程式碼： https://github.com/pace1953/Projecy_ESUN_FrontEnd/tree/master
+
 有透過Spring Security 提供的「in-memory user」功能設定管理員，可以訪問
 http://localhost:8080/rest/emp
 ，登入(admin, admin123)後，
