@@ -21,7 +21,7 @@ select EMP_ID, NAME, EMAIL, FLOOR_SEAT_SEQ from Employee order by EMP_ID;
 
 `BEGIN` 
 
-select FLOOR_SEAT_SEQ, FLOOR_NO, SEAT_NO from SeatingChart order by FLOOR_NO, SEAT_NO;
+select FLOOR_SEAT_SEQ, FLOOR_NO, SEAT_NO from Seating_Chart order by FLOOR_NO, SEAT_NO;
 
 `END //` 
 
@@ -82,7 +82,7 @@ order by s.FLOOR_NO, s.SEAT_NO;
 
 `BEGIN` 
 
-select FLOOR_SEAT_SEQ from SeatingChart where FLOOR_NO = floorNo and SEAT_NO = seatNo;
+select FLOOR_SEAT_SEQ from Seating_Chart where FLOOR_NO = floorNo and SEAT_NO = seatNo;
 
 `END //` 
 

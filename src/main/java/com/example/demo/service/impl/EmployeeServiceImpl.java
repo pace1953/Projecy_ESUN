@@ -55,6 +55,7 @@ public class EmployeeServiceImpl implements EmployeeService{
 	}
 
 	@Override
+	@Transactional
 	public void deleteSeatingToEmp(Integer empId) throws EmployeeException {
 		
 		try {
