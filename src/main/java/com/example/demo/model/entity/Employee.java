@@ -28,7 +28,7 @@ public class Employee {
 	private String empName;
 	
 	// 員工電子郵件
-	@Column(name = "EMAIL", nullable = false)
+	@Column(name = "EMAIL", nullable = false, unique = true)
 	private String empEmail;
 	
 	// FK 關聯 seatSeq

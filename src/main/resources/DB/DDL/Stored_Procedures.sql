@@ -55,3 +55,21 @@ update Employee set FLOOR_SEAT_SEQ = NULL where EMP_ID = empId;
 `END //` 
 
 `DELIMITER ;`
+
+
+-- 查座位有沒有人佔用
+`DELIMITER //`
+
+`CREATE PROCEDURE` getSeatingOccupancy()
+
+`BEGIN` 
+
+select s.FLOOR_SEAT_SEQ, s.FLOOR_NO, s.SEAT_NO, e.EMP_ID, e.NAME 
+from SeatingChart s 
+left join Employee e 
+on s.FLOOR_SEAT_SEQ = e.FLOOR_SEAT_SEQ 
+order by s.FLOOR_NO, s.SEAT_NO;
+
+`END //` 
+
+`DELIMITER ;`
