@@ -24,10 +24,10 @@ public class SeatingChart {
 	private Integer seatSeq;
 	
 	// 樓層編號
-	@Column(name = "FLOOR_NO", nullable = false, unique = true)
+	@Column(name = "FLOOR_NO", nullable = false)
 	private Integer floorNo;
 	
 	// 座位編號
-	@Column(name = "SEAT_NO", nullable = false, unique = true)
+	@Column(name = "SEAT_NO", nullable = false)
 	private Integer seatNo;
 }
