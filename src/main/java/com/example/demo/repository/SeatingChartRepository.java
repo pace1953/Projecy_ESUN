@@ -18,7 +18,7 @@ public interface SeatingChartRepository extends JpaRepository<SeatingChart, Inte
 	
 	// 查詢座位的占用 (SP -> getSeatingOccupancy())
 	@Query(value = "CALL getSeatingOccupancy()", nativeQuery = true)
-	List<SeatingChart> getSeatingOccupancy();
+	List<Object[]> getSeatingOccupancy();
 	
 	// 用樓層跟座位號找座位的SEQ (SP -> getSeatingSeq(:floorNo, :seatNo))
 	@Query(value = "CALL getSeatingSeq(:floorNo, :seatNo)", nativeQuery = true)
